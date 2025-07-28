@@ -1,0 +1,36 @@
+.container {
+    background-color: #f2e9e4;
+    padding: 1em;
+    text-align: center;
+    height: 500px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-items: baseline;
+
+    align-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+.bloco1 {
+    background-color: #c9ada7;
+    border-radius: 0.5em;
+    width: 5em;
+    height: 5em;
+}
+.bloco2 {
+    background-color: #9a8c98;
+    border-radius: 0.5em;
+    width: 5em;
+    height: 5em;
+}
+.bloco3 {
+    background-color: #4a4e69;
+    border-radius: 0.5em;
+    width: 5em;
+    height: 5em;
+}
