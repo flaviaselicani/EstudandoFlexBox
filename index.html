@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Estudos CSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Estudos CSS</h1>
+    </header>
     <main class="container">
-        <div class="bloco1">1</div>
-        <div class="bloco2">2</div>
-        <div class="bloco3">3</div>
+        <section class="sumario">
+            <h2>Sumário</h2>
+            <ul>
+                <li><a href="">Flexbox</a></li>
+            </ul>
+        </section>
+
+        <section class="conteudo">
+            <div class="conteudo-flexbox">
+                <h3>Flexbox</h3>
+                <div class="cont-flexb1">
+                    <h4>Display: flex</h4>
+                    <p>Identificar o elemento container do flexbox (pai)</p>
+                        <div class="dispflex1-pai">
+                            <div class="dispflex1-filho"></div>
+                            <div class="dispflex1-filho"></div>
+                            <div class="dispflex1-filho"></div>
+                        </div>
+                </div>
+                <div class="cont-flexb2">
+                    <h4>Display: flex-direction</h4>
+                    <p>Direção do eixo principal (como padrão o navegador define para "row"). No exemplo abaixo usamos: "flex-direction: column".</p>
+                        <div class="dispflex2-pai">
+                            <div class="dispflex2-filho"></div>
+                            <div class="dispflex2-filho"></div>
+                            <div class="dispflex2-filho"></div>
+                        </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>

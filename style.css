@@ -1,36 +1,78 @@
-.container {
-    background-color: #f2e9e4;
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+}
+header {
     padding: 1em;
-    text-align: center;
-    height: 500px;
-
+    background-color: #3A5A40;
+}
+header h1 {
+    color: #DAD7CD;
+    font-weight: 400;
+}
+.container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-
-    align-items: baseline;
-
-    align-content: center;
-
-    flex-wrap: wrap;
-
-    gap: 20px;
+    padding: 1em;
+    background-color: #f8f8f8;
 }
-.bloco1 {
-    background-color: #c9ada7;
-    border-radius: 0.5em;
-    width: 5em;
-    height: 5em;
+.sumario {
+    width: 25%;
+    padding: 1em;
+    border: #3A5A40 solid 1px;
+    color: #3A5A40;
 }
-.bloco2 {
-    background-color: #9a8c98;
-    border-radius: 0.5em;
-    width: 5em;
-    height: 5em;
+.sumario ul {
+    padding: .5em;
 }
-.bloco3 {
-    background-color: #4a4e69;
-    border-radius: 0.5em;
-    width: 5em;
-    height: 5em;
+.sumario li {
+     list-style-type: decimal;
+}
+.conteudo {
+    width: 75%;
+    margin-left: .2em;
+    padding: 1em;
+    border: #3A5A40 solid 1px;
+}
+.conteudo-flexbox h3 {
+    font-size: 30px;
+    color: #3A5A40;
+    font-weight: 500;
+    padding-bottom: .5em;
+}
+.cont-flexb1, .cont-flexb2 {
+    padding-bottom: .5em;
+}
+.conteudo-flexbox h4 {
+    font-size: 20px;
+    color: #3A5A40;
+    font-weight: 400;
+}
+.dispflex1-pai{
+    padding: .5em;
+    background-color: #3A5A40;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.dispflex1-filho {
+    padding: .5em 3em .5em 3em;
+    background-color: #DAD7CD;
+}
+.dispflex2-pai{
+    padding: .5em;
+    background-color: #3A5A40;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.dispflex2-filho {
+    padding: .5em 3em .5em 3em;
+    background-color: #DAD7CD;
+    border: #3A5A40 solid 1px;
 }
