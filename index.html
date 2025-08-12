@@ -21,22 +21,65 @@
         <section class="conteudo">
             <div class="conteudo-flexbox">
                 <h3>Flexbox</h3>
-                <div class="cont-flexb1">
+                <p>Abaixo listei algumas propriedades que mais utilizo. Adicionando propriedades nos elementos pai e elementos filho.<br>Fontes:<br><a href="https://youtu.be/KbjLtEgmZ_E?si=LYRDXnhMvpaCGFt6" target="_blank">FLEXBOX CSS! Como posicionar elementos na página web</a><br><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox" target="_blank">CSS Flexbox Layout Guide</a></p>
+                <div class="cont-flexb-dispflex">
                     <h4>Display: flex</h4>
-                    <p>Identificar o elemento container do flexbox (pai)</p>
+                    <p>Identificar o elemento container do flexbox (pai). Exemplo(s):<br>
+                        <span>display: flex;<br>justify-content: space-around;</span>
+                    </p>
                         <div class="dispflex1-pai">
                             <div class="dispflex1-filho"></div>
                             <div class="dispflex1-filho"></div>
                             <div class="dispflex1-filho"></div>
                         </div>
                 </div>
-                <div class="cont-flexb2">
+                <div class="cont-flexb-dispflexdir">
                     <h4>Display: flex-direction</h4>
-                    <p>Direção do eixo principal (como padrão o navegador define para "row"). No exemplo abaixo usamos: "flex-direction: column".</p>
+                    <p>Direção do eixo principal (como padrão o navegador define para "row"). Exemplo(s):<br>
+                        <span>flex-direction: column;</span>
+                    </p> 
                         <div class="dispflex2-pai">
                             <div class="dispflex2-filho"></div>
                             <div class="dispflex2-filho"></div>
                             <div class="dispflex2-filho"></div>
+                        </div>
+                    <p><br>
+                        <span>flex-direction: row;</span>
+                    </p> 
+                        <div class="dispflex3-pai">
+                            <div class="dispflex3-filho"></div>
+                            <div class="dispflex3-filho"></div>
+                            <div class="dispflex3-filho"></div>
+                        </div>
+                </div>
+                <div class="cont-flexb-justcont">
+                    <h4>Justify Content</h4>
+                    <p>Para alinhar os elementos no eixo principal. Exemplo(s):<br>
+                        <span>justify-content: space-between;</span>
+                    </p> 
+                        <div class="dispflex4-pai">
+                            <div class="dispflex4-filho"></div>
+                            <div class="dispflex4-filho"></div>
+                            <div class="dispflex4-filho"></div>
+                        </div>
+                        <p><br>
+                        <span>justify-content: space-around;</span>
+                        </p> 
+                        <div class="dispflex5-pai">
+                            <div class="dispflex5-filho"></div>
+                            <div class="dispflex5-filho"></div>
+                            <div class="dispflex5-filho"></div>
+                        </div>
+                </div>
+                <div class="cont-flexb-alignite">
+                    <h4>Align items</h4>
+                    <p>Para alinhar os elementos no eixo perpendicular. Exemplo(s):<br>
+                        <span>display: flex;<br>flex-direction: column;<br>align-items: center;</span>
+                    </p>
+                        <div class="dispflex6-pai">
+                            <div class="dispflex6-filho"></div>
+                            <div class="dispflex6-filho"></div>
+                            <div class="dispflex6-filho"></div>
                         </div>
                 </div>
             </div>
