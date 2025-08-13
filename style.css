@@ -1,134 +1,175 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Work Sans", sans-serif;
-    text-decoration: none;
-}
-header {
-    padding: 1em;
-    background-color: #3A5A40;
-}
-header h1 {
-    color: #DAD7CD;
-    font-weight: 400;
-}
-.container {
-    display: flex;
-    flex-direction: row;
-    padding: 1em;
-    background-color: #f8f8f8;
-}
-.sumario {
-    width: 25%;
-    padding: 1em;
-    border: #3A5A40 solid 1px;
-    color: #3A5A40;
-}
-.sumario ul {
-    padding: .5em;
-}
-.sumario li {
-     list-style-type: decimal;
-}
-.conteudo {
-    width: 75%;
-    margin-left: .2em;
-    padding: 1em;
-    border: #3A5A40 solid 1px;
-}
-.conteudo-flexbox h3 {
-    font-size: 30px;
-    color: #3A5A40;
-    font-weight: 500;
-    padding-bottom: .5em;
-}
-.cont-flexb-dispflex, .cont-flexb-dispflexdir, p {
-    padding-bottom: .5em;
-}
-.conteudo-flexbox h4 {
-    font-size: 20px;
-    color: #3A5A40;
-    font-weight: 600;
-}
-span {
-    font-size: 14px;
-    font-family: "Google Sans Code", monospace;;
-    color: #7b7b7b;
-    background-color: #e5e5e5;
-}
-/* inicio conteudo-flexbox */
-.dispflex1-pai{
-    padding: .5em;
-    background-color: #3A5A40;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-around;
-}
-.dispflex1-filho {
-    padding: .5em 3em .5em 3em;
-    background-color: #DAD7CD;
-}
-.dispflex2-pai{
-    padding: .5em;
-    background-color: #DAD7CD;
-    border-radius: 5px;
-    flex-direction: column;
-}
-.dispflex2-filho {
-    width: 33%;
-    padding: .5em 3em .5em 3em;
-    background-color: #3A5A40;
-    border: #DAD7CD solid 1px;
-}
-.dispflex3-pai{
-    padding: .5em;
-    background-color: #DAD7CD;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-}
-.dispflex3-filho {
-    width: 33%;
-    padding: .5em 3em .5em 3em;
-    background-color: #3A5A40;
-    border: #DAD7CD solid 1px;
-}
-.dispflex4-pai{
-    padding: .5em;
-    background-color: #DAD7CD;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-}
-.dispflex4-filho {
-    padding: .5em 3em .5em 3em;
-    background-color: #3A5A40;
-}
-.dispflex5-pai{
-    padding: .5em;
-    background-color: #DAD7CD;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-around;
-}
-.dispflex5-filho {
-    padding: .5em 3em .5em 3em;
-    background-color: #3A5A40;
-}
-.dispflex6-pai{
-    padding: .5em;
-    background-color: #DAD7CD;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.dispflex6-filho {
-    width: 33%;
-    padding: .5em 3em .5em 3em;
-    background-color: #3A5A40;
-    border: #DAD7CD solid 1px;
-}
-/* fim conteudo-flexbox */
+/* inicio reset css */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Work Sans", sans-serif;
+        text-decoration: none;
+    }
+/* fim reset css */
+/* inicio cabecalho */
+    header {
+        padding: 1em;
+        background-color: #3A5A40;
+    }
+    header h1 {
+        color: #DAD7CD;
+        font-weight: 400;
+    }
+/* fim cabecalho */
+/* inicio container principal (main) */
+        .container {
+            display: flex;
+            flex-direction: row;
+            padding: 1em;
+            background-color: #f8f8f8;
+        }
+/* inicio seção sumario */
+        .sumario {
+            width: 25%;
+            padding: 1em;
+            border: #3A5A40 solid 1px;
+            color: #3A5A40;
+        }
+        .sumario ul {
+            padding: .5em;
+        }
+        .sumario li {
+            list-style-type: decimal;
+        }
+/* fim seção sumario */
+/* inicio seção conteudo */
+        .conteudo {
+            width: 75%;
+            margin-left: .2em;
+            padding: 1em;
+            border: #3A5A40 solid 1px;
+        }
+/* inicio conteudo seção: 1 flexbox */
+            .conteudo-flexbox h3 {
+                font-size: 30px;
+                color: #3A5A40;
+                font-weight: 500;
+                padding-bottom: .5em;
+            }
+            .conteudo-flexbox p {
+                padding-bottom: 1em;
+            }
+            .conteudo-flexbox h4 {
+                font-size: 20px;
+                color: #3A5A40;
+                font-weight: 600;
+            }
+            .conteudo-flexbox span {
+                font-size: 14px;
+                font-family: "Google Sans Code", monospace;;
+                color: #7b7b7b;
+                background-color: #e5e5e5;
+            }
+            .cont-flexb-dispflex, .cont-flexb-dispflexdir, .cont-flexb-justcont, .cont-flexb-alignite, .cont-flexb-flexwrap {
+                padding-bottom: 1.5em;
+            }
+            /* ESTILOS BASE */
+            .cont-flexb-dispflex-pai,
+            .cont-flexb-dispflex-pai1,
+            .cont-flexb-dispflex-pai2,
+            .cont-flexb-justcont-pai1,
+            .cont-flexb-justcont-pai2,
+            .cont-flexb-alignite-pai,
+            .cont-flexb-flexwrap-pai1,
+            .cont-flexb-flexwrap-pai2 {
+                padding: .5em;
+                border-radius: 5px;
+            }
+            /* Pai com display flex */
+            .cont-flexb-dispflex-pai,
+            .cont-flexb-dispflex-pai2,
+            .cont-flexb-justcont-pai1,
+            .cont-flexb-justcont-pai2,
+            .cont-flexb-alignite-pai,
+            .cont-flexb-flexwrap-pai1,
+            .cont-flexb-flexwrap-pai2 {
+                display: flex;
+            }
+            /* Padrão de filhos com padding */
+            .cont-flexb-dispflex-filho,
+            .cont-flexb-dispflex-filho1,
+            .cont-flexb-dispflex-filho2,
+            .cont-flexb-justcont-filho1,
+            .cont-flexb-justcont-filho2,
+            .cont-flexb-alignite-filho,
+            .cont-flexb-flexwrap-filho1,
+            .cont-flexb-flexwrap-filho2 {
+                padding: .5em 3em;
+            }
+            /* Filhos com largura e borda */
+            .cont-flexb-dispflex-filho1,
+            .cont-flexb-dispflex-filho2,
+            .cont-flexb-alignite-filho,
+            .cont-flexb-flexwrap-filho1,
+            .cont-flexb-flexwrap-filho2 {
+                width: 33%;
+                border: #DAD7CD solid 1px;
+            }
+            /* ======== CORES ======== */
+            .cont-flexb-dispflex-pai {
+                background-color: #3A5A40;
+                justify-content: space-around;
+            }
+            .cont-flexb-dispflex-filho {
+                background-color: #DAD7CD;
+            }
+            .cont-flexb-dispflex-pai1 {
+                background-color: #DAD7CD;
+                flex-direction: column;
+            }
+            .cont-flexb-dispflex-filho1 {
+                background-color: #3A5A40;
+            }
+            .cont-flexb-dispflex-pai2 {
+                background-color: #DAD7CD;
+                flex-direction: row;
+            }
+            .cont-flexb-dispflex-filho2 {
+                background-color: #3A5A40;
+            }
+            .cont-flexb-justcont-pai1 {
+                background-color: #DAD7CD;
+                justify-content: space-between;
+            }
+            .cont-flexb-justcont-filho1 {
+                background-color: #3A5A40;
+            }
+            .cont-flexb-justcont-pai2 {
+                background-color: #DAD7CD;
+                justify-content: space-around;
+            }
+            .cont-flexb-justcont-filho2 {
+                background-color: #3A5A40;
+            }
+            .cont-flexb-alignite-pai {
+                background-color: #DAD7CD;
+                flex-direction: column;
+                align-items: center;
+            }
+            .cont-flexb-alignite-filho {
+                background-color: #3A5A40;
+            }
+            .cont-flexb-flexwrap-pai1 {
+                background-color: #DAD7CD;
+                flex-wrap: wrap;
+            }
+            .cont-flexb-flexwrap-filho1 {
+                background-color: #3A5A40;
+            }
+            .cont-flexb-flexwrap-pai2 {
+                background-color: #DAD7CD;
+                flex-wrap: nowrap;
+            }
+            .cont-flexb-flexwrap-filho2 {
+                background-color: #3A5A40;
+            }
+    /* fim conteudo seção: 1 flexbox */
+    /* fim seção conteudo */
+/* fim container principal (main) */

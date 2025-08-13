@@ -21,16 +21,16 @@
         <section class="conteudo">
             <div class="conteudo-flexbox">
                 <h3>Flexbox</h3>
-                <p>Abaixo listei algumas propriedades que mais utilizo. Adicionando propriedades nos elementos pai e elementos filho.<br>Fontes:<br><a href="https://youtu.be/KbjLtEgmZ_E?si=LYRDXnhMvpaCGFt6" target="_blank">FLEXBOX CSS! Como posicionar elementos na página web</a><br><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox" target="_blank">CSS Flexbox Layout Guide</a></p>
+                <p>Abaixo listei algumas propriedades que mais utilizo. Adicionando propriedades no elemento pai e elementos filhos.<br>Fontes:<br><a href="https://youtu.be/KbjLtEgmZ_E?si=LYRDXnhMvpaCGFt6" target="_blank">FLEXBOX CSS! Como posicionar elementos na página web</a><br><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox" target="_blank">CSS Flexbox Layout Guide</a></p>
                 <div class="cont-flexb-dispflex">
                     <h4>Display: flex</h4>
                     <p>Identificar o elemento container do flexbox (pai). Exemplo(s):<br>
                         <span>display: flex;<br>justify-content: space-around;</span>
                     </p>
-                        <div class="dispflex1-pai">
-                            <div class="dispflex1-filho"></div>
-                            <div class="dispflex1-filho"></div>
-                            <div class="dispflex1-filho"></div>
+                        <div class="cont-flexb-dispflex-pai">
+                            <div class="cont-flexb-dispflex-filho"></div>
+                            <div class="cont-flexb-dispflex-filho"></div>
+                            <div class="cont-flexb-dispflex-filho"></div>
                         </div>
                 </div>
                 <div class="cont-flexb-dispflexdir">
@@ -38,48 +38,75 @@
                     <p>Direção do eixo principal (como padrão o navegador define para "row"). Exemplo(s):<br>
                         <span>flex-direction: column;</span>
                     </p> 
-                        <div class="dispflex2-pai">
-                            <div class="dispflex2-filho"></div>
-                            <div class="dispflex2-filho"></div>
-                            <div class="dispflex2-filho"></div>
+                        <div class="cont-flexb-dispflex-pai1">
+                            <div class="cont-flexb-dispflex-filho1"></div>
+                            <div class="cont-flexb-dispflex-filho1"></div>
+                            <div class="cont-flexb-dispflex-filho1"></div>
                         </div>
                     <p><br>
                         <span>flex-direction: row;</span>
                     </p> 
-                        <div class="dispflex3-pai">
-                            <div class="dispflex3-filho"></div>
-                            <div class="dispflex3-filho"></div>
-                            <div class="dispflex3-filho"></div>
+                        <div class="cont-flexb-dispflex-pai2">
+                            <div class="cont-flexb-dispflex-filho2"></div>
+                            <div class="cont-flexb-dispflex-filho2"></div>
+                            <div class="cont-flexb-dispflex-filho2"></div>
                         </div>
                 </div>
                 <div class="cont-flexb-justcont">
-                    <h4>Justify Content</h4>
+                    <h4>Justify-Content</h4>
                     <p>Para alinhar os elementos no eixo principal. Exemplo(s):<br>
                         <span>justify-content: space-between;</span>
                     </p> 
-                        <div class="dispflex4-pai">
-                            <div class="dispflex4-filho"></div>
-                            <div class="dispflex4-filho"></div>
-                            <div class="dispflex4-filho"></div>
+                        <div class="cont-flexb-justcont-pai1">
+                            <div class="cont-flexb-justcont-filho1"></div>
+                            <div class="cont-flexb-justcont-filho1"></div>
+                            <div class="cont-flexb-justcont-filho1"></div>
                         </div>
                         <p><br>
                         <span>justify-content: space-around;</span>
                         </p> 
-                        <div class="dispflex5-pai">
-                            <div class="dispflex5-filho"></div>
-                            <div class="dispflex5-filho"></div>
-                            <div class="dispflex5-filho"></div>
+                        <div class="cont-flexb-justcont-pai2">
+                            <div class="cont-flexb-justcont-filho2"></div>
+                            <div class="cont-flexb-justcont-filho2"></div>
+                            <div class="cont-flexb-justcont-filho2"></div>
                         </div>
                 </div>
                 <div class="cont-flexb-alignite">
-                    <h4>Align items</h4>
+                    <h4>Align-Items</h4>
                     <p>Para alinhar os elementos no eixo perpendicular. Exemplo(s):<br>
                         <span>display: flex;<br>flex-direction: column;<br>align-items: center;</span>
                     </p>
-                        <div class="dispflex6-pai">
-                            <div class="dispflex6-filho"></div>
-                            <div class="dispflex6-filho"></div>
-                            <div class="dispflex6-filho"></div>
+                        <div class="cont-flexb-alignite-pai">
+                            <div class="cont-flexb-alignite-filho"></div>
+                            <div class="cont-flexb-alignite-filho"></div>
+                            <div class="cont-flexb-alignite-filho"></div>
+                        </div>
+                </div>
+                <div class="cont-flexb-flexwrap">
+                    <h4>Flex-Wrap</h4>
+                    <p>Para definir se os elementos terão uma quebra de linha ao chegarem ao final. Exemplo(s):<br>
+                        <span>display: flex;<br>flex-wrap: wrap;</span>
+                    </p>
+                        <div class="cont-flexb-flexwrap-pai1">
+                            <div class="cont-flexb-flexwrap-filho1"></div>
+                            <div class="cont-flexb-flexwrap-filho1"></div>
+                            <div class="cont-flexb-flexwrap-filho1"></div>
+                            <div class="cont-flexb-flexwrap-filho1"></div>
+                            <div class="cont-flexb-flexwrap-filho1"></div>
+                            <div class="cont-flexb-flexwrap-filho1"></div>
+                            <div class="cont-flexb-flexwrap-filho1"></div>
+                        </div>
+                    <p><br>
+                        <span>display: flex;<br>flex-wrap: nowrap;</span>
+                    </p>
+                        <div class="cont-flexb-flexwrap-pai2">
+                            <div class="cont-flexb-flexwrap-filho2"></div>
+                            <div class="cont-flexb-flexwrap-filho2"></div>
+                            <div class="cont-flexb-flexwrap-filho2"></div>
+                            <div class="cont-flexb-flexwrap-filho2"></div>
+                            <div class="cont-flexb-flexwrap-filho2"></div>
+                            <div class="cont-flexb-flexwrap-filho2"></div>
+                            <div class="cont-flexb-flexwrap-filho2"></div>
                         </div>
                 </div>
             </div>
