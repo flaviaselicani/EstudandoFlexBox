@@ -1,1 +1,1 @@
-# EstudandoFlexBox
+Projeto front-end para organização dos estudos de propriedades CSS. O projeto conta com um cabeçalho com o titulo da página. O conteúdo principal conta com duas seções principais. A primeira seção conta com um sumário para facilitar a navegação da página e localização do conteúdo. A segunda seção engloba todo o conteúdo de estudos e está separada por divisões para a separação dos tópicos. Dentro destas divisões existe o conteúdo dos tópicos e divisões para exemplificar os tópicos estudados. 

@@ -1,175 +1,195 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-/* inicio reset css */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Work Sans", sans-serif;
-        text-decoration: none;
-    }
-/* fim reset css */
-/* inicio cabecalho */
-    header {
-        padding: 1em;
-        background-color: #3A5A40;
-    }
-    header h1 {
-        color: #DAD7CD;
-        font-weight: 400;
-    }
-/* fim cabecalho */
-/* inicio container principal (main) */
-        .container {
-            display: flex;
-            flex-direction: row;
-            padding: 1em;
-            background-color: #f8f8f8;
-        }
-/* inicio seção sumario */
-        .sumario {
-            width: 25%;
-            padding: 1em;
-            border: #3A5A40 solid 1px;
-            color: #3A5A40;
-        }
-        .sumario ul {
-            padding: .5em;
-        }
-        .sumario li {
-            list-style-type: decimal;
-        }
-/* fim seção sumario */
-/* inicio seção conteudo */
-        .conteudo {
-            width: 75%;
-            margin-left: .2em;
-            padding: 1em;
-            border: #3A5A40 solid 1px;
-        }
-/* inicio conteudo seção: 1 flexbox */
-            .conteudo-flexbox h3 {
-                font-size: 30px;
-                color: #3A5A40;
-                font-weight: 500;
-                padding-bottom: .5em;
-            }
-            .conteudo-flexbox p {
-                padding-bottom: 1em;
-            }
-            .conteudo-flexbox h4 {
-                font-size: 20px;
-                color: #3A5A40;
-                font-weight: 600;
-            }
-            .conteudo-flexbox span {
-                font-size: 14px;
-                font-family: "Google Sans Code", monospace;;
-                color: #7b7b7b;
-                background-color: #e5e5e5;
-            }
-            .cont-flexb-dispflex, .cont-flexb-dispflexdir, .cont-flexb-justcont, .cont-flexb-alignite, .cont-flexb-flexwrap {
-                padding-bottom: 1.5em;
-            }
-            /* ESTILOS BASE */
-            .cont-flexb-dispflex-pai,
-            .cont-flexb-dispflex-pai1,
-            .cont-flexb-dispflex-pai2,
-            .cont-flexb-justcont-pai1,
-            .cont-flexb-justcont-pai2,
-            .cont-flexb-alignite-pai,
-            .cont-flexb-flexwrap-pai1,
-            .cont-flexb-flexwrap-pai2 {
-                padding: .5em;
-                border-radius: 5px;
-            }
-            /* Pai com display flex */
-            .cont-flexb-dispflex-pai,
-            .cont-flexb-dispflex-pai2,
-            .cont-flexb-justcont-pai1,
-            .cont-flexb-justcont-pai2,
-            .cont-flexb-alignite-pai,
-            .cont-flexb-flexwrap-pai1,
-            .cont-flexb-flexwrap-pai2 {
-                display: flex;
-            }
-            /* Padrão de filhos com padding */
-            .cont-flexb-dispflex-filho,
-            .cont-flexb-dispflex-filho1,
-            .cont-flexb-dispflex-filho2,
-            .cont-flexb-justcont-filho1,
-            .cont-flexb-justcont-filho2,
-            .cont-flexb-alignite-filho,
-            .cont-flexb-flexwrap-filho1,
-            .cont-flexb-flexwrap-filho2 {
-                padding: .5em 3em;
-            }
-            /* Filhos com largura e borda */
-            .cont-flexb-dispflex-filho1,
-            .cont-flexb-dispflex-filho2,
-            .cont-flexb-alignite-filho,
-            .cont-flexb-flexwrap-filho1,
-            .cont-flexb-flexwrap-filho2 {
-                width: 33%;
-                border: #DAD7CD solid 1px;
-            }
-            /* ======== CORES ======== */
-            .cont-flexb-dispflex-pai {
-                background-color: #3A5A40;
-                justify-content: space-around;
-            }
-            .cont-flexb-dispflex-filho {
-                background-color: #DAD7CD;
-            }
-            .cont-flexb-dispflex-pai1 {
-                background-color: #DAD7CD;
-                flex-direction: column;
-            }
-            .cont-flexb-dispflex-filho1 {
-                background-color: #3A5A40;
-            }
-            .cont-flexb-dispflex-pai2 {
-                background-color: #DAD7CD;
-                flex-direction: row;
-            }
-            .cont-flexb-dispflex-filho2 {
-                background-color: #3A5A40;
-            }
-            .cont-flexb-justcont-pai1 {
-                background-color: #DAD7CD;
-                justify-content: space-between;
-            }
-            .cont-flexb-justcont-filho1 {
-                background-color: #3A5A40;
-            }
-            .cont-flexb-justcont-pai2 {
-                background-color: #DAD7CD;
-                justify-content: space-around;
-            }
-            .cont-flexb-justcont-filho2 {
-                background-color: #3A5A40;
-            }
-            .cont-flexb-alignite-pai {
-                background-color: #DAD7CD;
-                flex-direction: column;
-                align-items: center;
-            }
-            .cont-flexb-alignite-filho {
-                background-color: #3A5A40;
-            }
-            .cont-flexb-flexwrap-pai1 {
-                background-color: #DAD7CD;
-                flex-wrap: wrap;
-            }
-            .cont-flexb-flexwrap-filho1 {
-                background-color: #3A5A40;
-            }
-            .cont-flexb-flexwrap-pai2 {
-                background-color: #DAD7CD;
-                flex-wrap: nowrap;
-            }
-            .cont-flexb-flexwrap-filho2 {
-                background-color: #3A5A40;
-            }
-    /* fim conteudo seção: 1 flexbox */
-    /* fim seção conteudo */
-/* fim container principal (main) */
+
+:root {
+    --primary-color: #3A5A40;
+    --secondary-color: #DAD7CD;
+    --background-color: #f8f8f8;
+    --code-bg-color: #e5e5e5;
+    --code-color: #7b7b7b;
+}
+
+/* --- Reset CSS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+}
+
+/* --- Layout Principal --- */
+header {
+    padding: 1em;
+    background-color: var(--primary-color);
+}
+
+header h1 {
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    padding: 1em;
+    background-color: var(--background-color);
+}
+
+.sumario,
+.conteudo {
+    padding: 1em;
+    border: 1px solid var(--primary-color);
+}
+
+.sumario {
+    width: 20%;
+    color: var(--primary-color);
+}
+
+.sumario ol {
+    padding: .5em;
+}
+
+.sumario li {
+    list-style-type: decimal;
+    padding-bottom: .5em;
+}
+
+.conteudo {
+    width: 80%;
+    margin-left: .2em;
+}
+
+/* --- Estilos de Conteúdo (Flexbox) --- */
+.conteudo-flexbox h3,
+.conteudo-flexbox h4,
+.conteudo-padding h3 {
+    color: var(--primary-color);
+}
+
+.conteudo-flexbox h3,
+.conteudo-padding h3 {
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: .5em;
+}
+
+.conteudo-flexbox h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.conteudo-flexbox p {
+    padding-bottom: 1em;
+}
+
+.conteudo-flexbox span, .conteudo-padding span {
+    font-size: 14px;
+    font-family: "Google Sans Code", monospace;
+    background-color: var(--code-bg-color);
+    color: var(--code-color);
+}
+
+.cont-flexb-dispflex,
+.cont-flexb-dispflexdir,
+.cont-flexb-justcont,
+.cont-flexb-alignite,
+.cont-flexb-flexwrap {
+    padding-bottom: 1.5em;
+}
+
+/* --- Padrões para Elementos Flexbox --- */
+/* Pais */
+.cont-flexb-dispflex-pai,
+.cont-flexb-dispflex-pai2,
+.cont-flexb-justcont-pai1,
+.cont-flexb-justcont-pai2,
+.cont-flexb-alignite-pai,
+.cont-flexb-flexwrap-pai1,
+.cont-flexb-flexwrap-pai2 {
+    display: flex;
+    padding: .5em;
+    border-radius: 5px;
+}
+
+/* Filhos */
+.cont-flexb-dispflex-filho,
+.cont-flexb-dispflex-filho1,
+.cont-flexb-dispflex-filho2,
+.cont-flexb-justcont-filho1,
+.cont-flexb-justcont-filho2,
+.cont-flexb-alignite-filho,
+.cont-flexb-flexwrap-filho1,
+.cont-flexb-flexwrap-filho2 {
+    padding: .5em 3em;
+}
+
+/* Filhos com largura e borda */
+.cont-flexb-dispflex-filho1,
+.cont-flexb-dispflex-filho2,
+.cont-flexb-alignite-filho,
+.cont-flexb-flexwrap-filho1,
+.cont-flexb-flexwrap-filho2,
+.cont-paddi-filho {
+    width: 33%;
+    border: 1px solid var(--secondary-color);
+}
+
+/* --- Estilos Específicos (Cores e Comportamentos) --- */
+.cont-flexb-dispflex-pai, .cont-paddi-pai {
+    background-color: var(--primary-color);
+}
+.cont-flexb-dispflex-pai {
+    justify-content: space-around;
+}
+
+.cont-flexb-dispflex-filho, .cont-paddi-filho {
+    background-color: var(--secondary-color);
+}
+
+.cont-flexb-dispflex-pai1,
+.cont-flexb-dispflex-pai2,
+.cont-flexb-justcont-pai1,
+.cont-flexb-justcont-pai2,
+.cont-flexb-alignite-pai,
+.cont-flexb-flexwrap-pai1,
+.cont-flexb-flexwrap-pai2 {
+    background-color: var(--secondary-color);
+}
+
+.cont-flexb-dispflex-pai1 {
+    flex-direction: column;
+}
+
+.cont-flexb-dispflex-filho1,
+.cont-flexb-dispflex-filho2,
+.cont-flexb-justcont-filho1,
+.cont-flexb-justcont-filho2,
+.cont-flexb-alignite-filho,
+.cont-flexb-flexwrap-filho1,
+.cont-flexb-flexwrap-filho2 {
+    background-color: var(--primary-color);
+}
+
+.cont-flexb-justcont-pai1 {
+    justify-content: space-between;
+}
+
+.cont-flexb-justcont-pai2 {
+    justify-content: space-around;
+}
+
+.cont-flexb-alignite-pai {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-flexb-flexwrap-pai1 {
+    flex-wrap: wrap;
+}
+
+.cont-flexb-flexwrap-pai2 {
+    flex-wrap: nowrap;
+}
+.cont-paddi-filho {
+    padding: 1em;
+}
